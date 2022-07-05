@@ -1,0 +1,150 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monserat', sans-serif;   
+}
+ body{
+    width: 100%;
+    height: 100vh;  
+    background-image: url(images/einstein.jpg); 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition: 1s; 
+}    
+.logo{
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+} 
+ .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;   
+} 
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li a,a{
+    text-decoration: none;
+    color: #fff;
+  
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 35px;
+    
+}
+
+.navbar ul :hover{
+ color: red;
+}
+    
+.btn:hover{
+    background-color: blue;
+}
+
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    color: white;
+
+}
+.info div{
+ margin: 0 20px;
+} 
+
+.info h2{
+  font-size: 44px;
+  font-weight: 400;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    cursor: pointer;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px ;
+    display: flex;
+}
+a:hover{
+    background: black;
+    border-radius: 10px;
+    padding:3px;
+}
+
+
+/* media query*/
+@media (max-width: 1000px){
+    .nav-links{
+        display: none;
+    }
+   .nav-links ul li{
+       display: none;
+   }
+    .toggle-button {
+        display: flex;  
+    }
+    .logo .navbar{   
+    position: relative;
+    }
+    .btn{
+        display: none;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar ul li{
+        display: none;
+        
+    }
+    .logo{
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    } 
+   .info h1 {
+       display: flex;
+       flex-direction: column;
+       font-size: 15px;
+   }
+   .info div{
+      margin-right: 15px ;
+   }
+   .info .change{
+       display: none;
+   }
+   .navbar ul li {
+       display: flex;
+   }
+   
+   .nav-links.active{
+       display: flex;
+   }
+
+} 
+
+
